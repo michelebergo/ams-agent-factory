@@ -1,0 +1,16 @@
+[project]
+name = "ams-agent-factory"
+version = "0.1.0"
+description = "Agentic AMS IC design scaffold with Jama requirements, wiki memory, AutoSearch, and model routing"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2", "pyyaml>=6", "typer>=0.12", "rich>=13", "requests>=2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+amsaf = "ams_agent_factory.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

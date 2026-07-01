@@ -1,0 +1,27 @@
+default_model: cheap_fast
+
+agents:
+  jama_ingest_agent:
+    default: cheap_fast
+  requirement_normalizer_agent:
+    default: medium_reasoning
+    escalate_to: strong_reasoning
+    escalation_signals: [ambiguous_requirement, missing_units, conflicting_requirement]
+  topology_agent:
+    default: strong_reasoning
+  sizing_agent:
+    default: medium_reasoning
+    escalate_to: strong_reasoning
+    escalation_signals: [device_region_violation, stability_failure, conflicting_objectives]
+  testbench_agent:
+    default: medium_reasoning
+  simulation_agent:
+    default: tool_only
+  verifier_agent:
+    default: tool_only
+  optimizer_agent:
+    default: medium_reasoning
+    escalate_to: strong_reasoning
+    escalation_signals: [hard_requirement_failure, repeated_regression]
+  documentation_agent:
+    default: cheap_fast

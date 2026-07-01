@@ -1,0 +1,5 @@
+jama:
+  base_url_env: JAMA_BASE_URL
+  auth: oauth
+  read_only_default: true
+  baseline_required: true

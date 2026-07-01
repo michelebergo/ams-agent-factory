@@ -1,0 +1,10 @@
+block: ldo_core
+parameters:
+  ota_tail_current_a: [0.00002, 0.0002]
+  ccomp_f: [0.2e-12, 20e-12]
+  rzero_ohm: [0, 5.0e6]
+  pass_pmos_width_m: [100e-6, 10000e-6]
+hard_gates:
+  - dc_operating_point_valid
+  - vout_regulated
+  - device_regions_valid

@@ -1,0 +1,25 @@
+models:
+  cheap_fast:
+    provider: openai
+    model: gpt-5.5-mini
+    max_input_tokens: 64000
+    cost_class: low
+  medium_reasoning:
+    provider: openai
+    model: gpt-5.5
+    max_input_tokens: 128000
+    cost_class: medium
+  strong_reasoning:
+    provider: openai
+    model: gpt-5.5-thinking
+    max_input_tokens: 196000
+    cost_class: high
+  local_coder:
+    provider: ollama
+    model: qwen3-coder
+    base_url: http://localhost:11434
+    cost_class: local
+  tool_only:
+    provider: none
+    model: none
+    cost_class: zero

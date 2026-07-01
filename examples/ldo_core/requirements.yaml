@@ -1,0 +1,18 @@
+block: ldo_core
+source:
+  system: jama
+  baseline_id: BL_EXAMPLE_LDO
+requirements:
+  - id: REQ-LDO-VOUT-001
+    metric: vout_v
+    min: 1.176
+    max: 1.224
+    testbench: tb_ldo_dc_load_sweep
+  - id: REQ-LDO-STAB-001
+    metric: phase_margin_deg
+    min: 60
+    testbench: tb_ldo_loop_gain
+  - id: REQ-LDO-IQ-001
+    metric: iq_a
+    max: 0.0005
+    testbench: tb_ldo_operating_point

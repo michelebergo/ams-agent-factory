@@ -1,0 +1,7 @@
+memory:
+  raw_dir: raw
+  wiki_dir: wiki
+  evidence_required: true
+  search:
+    default_depth: 2
+    max_depth: 5

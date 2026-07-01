@@ -1,0 +1,9 @@
+{
+  "run_id": "ldo_iter_014_example",
+  "corner": "tt_27c",
+  "measurements": {
+    "vout_v": 1.203,
+    "phase_margin_deg": 62.5,
+    "iq_a": 0.00043
+  }
+}
